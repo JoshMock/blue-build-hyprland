@@ -1,0 +1,18 @@
+---
+modules:
+  - type: default-flatpaks
+    notify: true
+    system:
+      install:
+        - org.mozilla.firefox
+        - com.vivaldi.Vivaldi
+    user:
+      install:
+        - com.discordapp.Discord
+        - im.riot.Riot
+        - md.obsidian.Obsidian
+        - com.slack.Slack
+  - type: rpm-ostree
+    install:
+      - kitty
+      - kitty-terminfo
