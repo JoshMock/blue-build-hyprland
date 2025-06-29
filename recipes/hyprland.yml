@@ -6,7 +6,7 @@ install:
   - hypridle
   - hyprland-qtutils
   - hyprlock
-  - swaync
+  - SwayNotificationCenter
   - swww
   - ulauncher
   - wofi
