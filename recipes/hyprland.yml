@@ -6,7 +6,6 @@ repos:
   - https://repos.fyralabs.com/terra41/
   - https://copr.fedorainfracloud.org/coprs/alternateved/cliphist/repo/fedora-%OS_VERSION%/alternateved-cliphist-fedora-%OS_VERSION%.repo
   - https://copr.fedorainfracloud.org/coprs/scottames/hypr/repo/fedora-%OS_VERSION%/scottames-hypr-fedora-%OS_VERSION%.repo
-  - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
 install:
   - cliphist
   - dex-autostart
