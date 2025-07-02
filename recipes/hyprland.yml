@@ -21,4 +21,5 @@ replace:
       - hyprland-qtutils
       - hyprland
       - hyprlock
+      - aquamarine
       - swww
