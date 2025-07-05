@@ -23,3 +23,4 @@ replace:
       - hyprlock
       - aquamarine
       - swww
+      - mesa-libEGL
