@@ -9,6 +9,7 @@ install:
   - SwayNotificationCenter
   - ulauncher
   - wofi
+  - aquamarine
 remove:
   - swaylock
   - swayidle
@@ -21,6 +22,4 @@ replace:
       - hyprland-qtutils
       - hyprland
       - hyprlock
-      - aquamarine
       - swww
-      - mesa-libEGL
