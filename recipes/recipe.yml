@@ -9,6 +9,7 @@ image-version: latest
 modules:
   - from-file: hyprland.yml
   - from-file: base.yml
+  - from-file: laptop.yml
   - from-file: apps.yml
   - type: bling
     install:

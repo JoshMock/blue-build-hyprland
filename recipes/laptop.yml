@@ -1,0 +1,15 @@
+---
+modules:
+  - type: rpm-ostree
+    install:
+      - avahi
+      - bluez
+      - firewalld
+      - power-profiles-daemon
+  - type: systemd
+    system:
+      enabled:
+        - avahi-daemon.service
+        - bluetooth.service
+        - firewalld.service
+        - power-profiles-daemon.service
