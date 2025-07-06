@@ -12,7 +12,10 @@ modules:
         - im.riot.Riot
         - md.obsidian.Obsidian
         - com.slack.Slack
+        - app.getclipboard.Clipboard
+        - org.videolan.VLC
   - type: rpm-ostree
     install:
       - kitty
       - kitty-terminfo
+      - mpc

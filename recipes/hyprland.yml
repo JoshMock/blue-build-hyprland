@@ -23,4 +23,5 @@ modules:
         - hypridle
         - hyprland-qtutils
         - hyprlock
+        - pyprland
         - swww
