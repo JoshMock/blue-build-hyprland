@@ -14,3 +14,6 @@ modules:
   - type: bling
     install:
       - 1password
+  - type: chezmoi
+    repository: "https://github.com/JoshMock/dotfiles"
+    all-users: true
