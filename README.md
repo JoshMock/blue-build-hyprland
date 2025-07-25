@@ -7,13 +7,14 @@ See the [BlueBuild docs](https://blue-build.org/how-to/generate-iso/) to generat
 
 ### Setup and orchestration
 
-- Automatic auth into 1Password
-- automatic enable 1Password SSH agent
-- Run `chezmoi init --apply` after 1Password auth
 - set hostname
+- Automatic auth into 1Password on first login
+- Run `chezmoi init --apply` after first 1Password auth
+- automatic enable 1Password SSH agent
 - set up a healthchecks.io alert for backups
 - `pass` setup/sync for secrets that live on disk rather than 1Password
-- auto-setup Firefox profile
+- auto-setup Firefox profile on first login
+- auto-auth to Tailscale on first login
 
 ### Dependencies/packages
 
