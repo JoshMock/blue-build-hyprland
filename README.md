@@ -5,6 +5,18 @@ See the [BlueBuild docs](https://blue-build.org/how-to/generate-iso/) to generat
 
 ## Missing bits so far
 
+### Setup and orchestration
+
+- Automatic auth into 1Password
+- automatic enable 1Password SSH agent
+- Run `chezmoi init --apply` after 1Password auth
+- set hostname
+- set up a healthchecks.io alert for backups
+- `pass` setup/sync for secrets that live on disk rather than 1Password
+- auto-setup Firefox profile
+
+### Dependencies/packages
+
 Most of these will be installed in [Distrobox](https://distrobox.it/) containers, unless they need access to the host kernel to do their job.
 
 - interception-caps2esc
