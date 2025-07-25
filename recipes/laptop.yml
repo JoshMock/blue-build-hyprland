@@ -9,3 +9,5 @@ modules:
       enabled:
         - avahi-daemon.service
         - bluetooth.service
+      disabled:
+        - ModemManager.service
