@@ -16,7 +16,10 @@ modules:
         - org.videolan.VLC
   - type: rpm-ostree
     install:
-      - firefox-developer-edition
       - kitty
       - kitty-terminfo
       - mpc
+  - type: dnf
+    repos:
+      copr:
+        - the4runner/firefox-dev
