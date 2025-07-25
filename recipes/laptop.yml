@@ -4,8 +4,6 @@ modules:
     install:
       - avahi
       - bluez
-      - firewalld
-      - power-profiles-daemon
   - type: systemd
     system:
       enabled:
