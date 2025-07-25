@@ -9,5 +9,3 @@ modules:
       enabled:
         - avahi-daemon.service
         - bluetooth.service
-        - firewalld.service
-        - power-profiles-daemon.service
