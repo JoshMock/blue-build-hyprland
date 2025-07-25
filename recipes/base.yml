@@ -28,6 +28,7 @@ modules:
         - atim/gping
         - mecattaf/duoRPM
         - clarlok/tools
+        - brirec/interception-tools
     install:
       allow-erasing: true
       packages:
@@ -42,3 +43,7 @@ modules:
   - type: script
     snippets:
       - "git clone --depth=1 https://github.com/mattmc3/antidote.git /usr/share/zsh-antidote"
+  - type: files
+    files:
+      - source: system
+        destination: /

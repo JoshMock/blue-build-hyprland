@@ -20,7 +20,6 @@ See the [BlueBuild docs](https://blue-build.org/how-to/generate-iso/) to generat
 
 Most of these will be installed in [Distrobox](https://distrobox.it/) containers, unless they need access to the host kernel to do their job.
 
-- interception-caps2esc
 - mopidy+gstreamer
 - noti
 - mimeo
