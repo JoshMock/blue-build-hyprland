@@ -14,12 +14,10 @@ modules:
   - type: fonts
     fonts:
       nerd-fonts:
-        - Inter
         - Arimo
         - FiraCode
         - Hack
-        - Liberation
-        - NerdFontsSymbolsOnly
         - UbuntuMono
-        - DejaVu
-        - AncientFonts
+        - DejaVuSansMono
+      google-fonts:
+        - Inter 
