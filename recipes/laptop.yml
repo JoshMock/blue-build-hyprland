@@ -11,3 +11,15 @@ modules:
         - bluetooth.service
       disabled:
         - ModemManager.service
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - Inter
+        - Arimo
+        - FiraCode
+        - Hack
+        - Liberation
+        - NerdFontsSymbolsOnly
+        - UbuntuMono
+        - DejaVu
+        - AncientFonts
