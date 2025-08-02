@@ -3,6 +3,7 @@ modules:
   - type: rpm-ostree
     install:
       - atuin
+      - autorestic
       - bat
       - btop
       - direnv
@@ -13,6 +14,8 @@ modules:
       - podman
       - polkit-kde
       - procs
+      - restic
+      - rclone
       - ripgrep
       - tailscale
       - tmux
