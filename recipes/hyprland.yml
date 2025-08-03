@@ -25,3 +25,8 @@ modules:
         - hyprlock
         - pyprland
         - swww
+        - hyprpolkitagent
+  - type: systemd
+    user:
+      enabled:
+        - hyprpolkitagent.service

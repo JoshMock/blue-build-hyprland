@@ -12,7 +12,6 @@ modules:
       - git
       - neovim
       - podman
-      - polkit-kde
       - procs
       - restic
       - rclone
