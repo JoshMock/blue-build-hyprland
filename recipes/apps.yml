@@ -29,3 +29,6 @@ modules:
     repos:
       copr:
         - the4runner/firefox-dev
+    install:
+      packages:
+        - firefox-dev
