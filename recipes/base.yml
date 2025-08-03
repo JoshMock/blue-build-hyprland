@@ -18,6 +18,7 @@ modules:
       - ripgrep
       - tailscale
       - tmux
+      - udev
       - unzip
       - urlview
       - which
