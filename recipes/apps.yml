@@ -2,24 +2,15 @@
 modules:
   - type: default-flatpaks
     configurations:
-      - scope: system
-        repo:
-          title: Flathub (system)
-        notify: true
-        install:
-          - org.mozilla.firefox
-          - com.vivaldi.Vivaldi
-      - scope: user
-        repo:
-          title: Flathub (user)
-        notify: true
-        install:
-          - com.discordapp.Discord
-          - im.riot.Riot
-          - md.obsidian.Obsidian
-          - com.slack.Slack
-          - app.getclipboard.Clipboard
-          - org.videolan.VLC
+      - install:
+        - org.mozilla.firefox
+        - com.vivaldi.Vivaldi
+        - com.discordapp.Discord
+        - im.riot.Riot
+        - md.obsidian.Obsidian
+        - com.slack.Slack
+        - app.getclipboard.Clipboard
+        - org.videolan.VLC
   - type: rpm-ostree
     install:
       - kitty
