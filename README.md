@@ -15,6 +15,16 @@ See the [BlueBuild docs](https://blue-build.org/how-to/generate-iso/) to generat
 - `pass` setup/sync for secrets that live on disk rather than 1Password
 - auto-setup Firefox profile on first login
 - auto-auth to Tailscale on first login
+- add /tmp as [tmpfs](https://wiki.archlinux.org/title/Tmpfs) in /etc/fstab
+- set up [kwallet](https://wiki.archlinux.org/title/KDE_Wallet) to unlock GPG key on login and `kwallet-pam` rules inserted into `/etc/pam.d/login`
+- set up git-annex repos
+- sync important personal files from other laptops (maybe using `personal` git-annex repo)
+  - Downloads
+  - Code
+  - Pictures
+  - ~/.local/share/mail
+  - ~/.local/share/atuin
+- set up [ananicy-cpp](https://gitlab.com/ananicy-cpp/ananicy-cpp) service
 
 ### Dependencies/packages
 
@@ -60,6 +70,10 @@ Most of these will be installed in [Distrobox](https://distrobox.it/) containers
 - bugwarrior
 - nnn
 - pass
+
+### Future goals
+
+- use [nwg-panel](https://nwg-piotr.github.io/nwg-shell/nwg-panel)
 
 ## Installation
 
