@@ -31,7 +31,7 @@ modules:
         - atim/gping
         - mecattaf/duoRPM
         - clarlok/tools
-        - fszymanski/interception-tools
+        - brirec/interception-tools
     install:
       allow-erasing: true
       packages:
@@ -39,11 +39,6 @@ modules:
         - gping
         - starship
         - zellij
-  - type: systemd
-    system:
-      enabled:
-        - tailscaled
-        - udevmon
   - type: script
     snippets:
       - "git clone --depth=1 https://github.com/mattmc3/antidote.git /usr/share/zsh-antidote"
@@ -51,3 +46,8 @@ modules:
     files:
       - source: system
         destination: /
+  - type: systemd
+    system:
+      enabled:
+        - tailscaled
+        - udevmon
