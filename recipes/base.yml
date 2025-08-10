@@ -31,7 +31,7 @@ modules:
         - atim/gping
         - mecattaf/duoRPM
         - clarlok/tools
-        - brirec/interception-tools
+        - fszymanski/interception-tools
     install:
       allow-erasing: true
       packages:
