@@ -7,16 +7,22 @@ See the [BlueBuild docs](https://blue-build.org/how-to/generate-iso/) to generat
 
 ### Setup and orchestration
 
-- set hostname
-- Automatic auth into 1Password on first login
-- Run `chezmoi init --apply` after first 1Password auth
-- automatic enable 1Password SSH agent
 - set up a healthchecks.io alert for backups
-- `pass` setup/sync for secrets that live on disk rather than 1Password
-- auto-setup Firefox profile on first login
-- auto-auth to Tailscale on first login
 - add /tmp as [tmpfs](https://wiki.archlinux.org/title/Tmpfs) in /etc/fstab
 - set up [kwallet](https://wiki.archlinux.org/title/KDE_Wallet) to unlock GPG key on login and `kwallet-pam` rules inserted into `/etc/pam.d/login`
+  - or use [pam-gnupg](https://github.com/cruegge/pam-gnupg)
+- set up [ananicy-cpp](https://gitlab.com/ananicy-cpp/ananicy-cpp) service and config
+- set up systemd service to auto-run `rpm-ostree update`
+
+### First boot tasks
+
+- set hostname
+- auth into 1Password
+- enable 1Password SSH agent
+- Run `chezmoi init --apply` after first 1Password auth
+- `pass` setup/sync for secrets that live on disk rather than 1Password
+- setup Firefox profile/Mozilla sync
+- auth to Tailscale
 - set up git-annex repos
 - sync important personal files from other laptops (maybe using `personal` git-annex repo)
   - Downloads
@@ -24,11 +30,10 @@ See the [BlueBuild docs](https://blue-build.org/how-to/generate-iso/) to generat
   - Pictures
   - ~/.local/share/mail
   - ~/.local/share/atuin
-- set up [ananicy-cpp](https://gitlab.com/ananicy-cpp/ananicy-cpp) service
 
 ### Dependencies/packages
 
-Most of these will be installed in [Distrobox](https://distrobox.it/) containers, unless they need access to the host kernel to do their job.
+Most of these will be installed in [Distrobox](https://distrobox.it/) or toolbx containers (or some other, similar containerization solution), unless they need access to the host kernel to do their job.
 
 - mopidy+gstreamer
 - noti
