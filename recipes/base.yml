@@ -1,44 +1,88 @@
 ---
 modules:
+  # rather than one big rpm-ostree or dnf module, split things up into small, logical chunks
+  # lots of modules avoids one multi-GB layer that changes whenever any dependency updates
   - type: rpm-ostree
     install:
       - atuin
-      - autorestic
       - bat
       - btop
       - direnv
-      - docker
       - fd-find
-      - git
-      - neovim
-      - podman
       - procs
+      - ripgrep
+  - type: rpm-ostree
+    install:
+      - autorestic
       - restic
       - rclone
-      - ripgrep
+  - type: rpm-ostree
+    install:
+      - git
+      - git-extras
+      - git-lfs
+  - type: rpm-ostree
+    install:
+      - neovim
+  - type: rpm-ostree
+    install:
       - tailscale
+  - type: rpm-ostree
+    install:
       - tmux
-      - udev
-      - unzip
-      - urlview
       - which
-      - zip
       - zsh
+  - type: rpm-ostree
+    install:
+      - udev
+  - type: rpm-ostree
+    install:
+      - unzip
+      - zip
+  - type: rpm-ostree
+    install:
+      - urlview
   - type: dnf
     repos:
       copr:
         - atim/starship
+    install:
+      allow-erasing: true
+      packages:
+        - starship
+  - type: dnf
+    repos:
+      copr:
         - atim/gping
+    install:
+      allow-erasing: true
+      packages:
+        - gping
+  - type: dnf
+    repos:
+      copr:
         - mecattaf/duoRPM
-        - clarlok/tools
-        - brirec/interception-tools
     install:
       allow-erasing: true
       packages:
         - eza
-        - gping
-        - starship
+  - type: dnf
+    repos:
+      copr:
+        - clarlok/tools
+    install:
+      allow-erasing: true
+      packages:
         - zellij
+  - type: dnf
+    repos:
+      copr:
+        - brirec/interception-tools
+    install:
+      allow-erasing: true
+      packages:
+        - caps2esc
+        - interception-tools
   - type: script
     snippets:
       - "git clone --depth=1 https://github.com/mattmc3/antidote.git /usr/share/zsh-antidote"
