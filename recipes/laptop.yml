@@ -3,12 +3,19 @@ modules:
   - type: rpm-ostree
     install:
       - avahi
-      - bluez
   - type: systemd
     system:
       enabled:
         - avahi-daemon.service
+  - type: rpm-ostree
+    install:
+      - bluez
+  - type: systemd
+    system:
+      enabled:
         - bluetooth.service
+  - type: systemd
+    system:
       disabled:
         - ModemManager.service
   - type: fonts
@@ -20,4 +27,4 @@ modules:
         - UbuntuMono
         - DejaVuSansMono
       google-fonts:
-        - Inter 
+        - Inter

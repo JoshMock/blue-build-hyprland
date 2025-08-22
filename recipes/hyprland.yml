@@ -1,31 +1,43 @@
 ---
 modules:
   - type: rpm-ostree
-    install:
-      - dex-autostart
-      - SwayNotificationCenter
-      - ulauncher
-      - wofi
     remove:
       - swaylock
       - swayidle
       - swaybg
+  - type: rpm-ostree
+    install:
+      - dex-autostart
+  - type: rpm-ostree
+    install:
+      - SwayNotificationCenter
+    remove:
       - dunst
+  - type: rpm-ostree
+    install:
+      - ulauncher
+      - wofi
   - type: dnf
     repos:
       copr:
         - solopasha/hyprland
-        - alternateved/cliphist
     install:
       allow-erasing: true
       packages:
-        - cliphist
         - hypridle
         - hyprland-qtutils
         - hyprlock
         - pyprland
         - swww
         - hyprpolkitagent
+  - type: dnf
+    repos:
+      copr:
+        - alternateved/cliphist
+    install:
+      allow-erasing: true
+      packages:
+        - cliphist
   - type: systemd
     user:
       enabled:
