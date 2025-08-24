@@ -21,6 +21,7 @@ modules:
       - git
       - git-extras
       - git-lfs
+      - git-annex
   - type: rpm-ostree
     install:
       - neovim
