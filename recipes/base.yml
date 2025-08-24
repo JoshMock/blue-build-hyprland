@@ -86,7 +86,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - arun54321/ananicy-cpp
+        - bieszczaders/kernel-cachyos-addons
     install:
       allow-erasing: true
       packages:
