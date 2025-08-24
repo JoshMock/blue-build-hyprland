@@ -1,7 +1,6 @@
 # BlueBuild Template &nbsp; [![bluebuild build badge](https://github.com/joshmock/blue-build-hyprland/actions/workflows/build.yml/badge.svg)](https://github.com/joshmock/blue-build-hyprland/actions/workflows/build.yml)
 
 A [BlueBuild](https://blue-build.org/) image based on [wayblue](https://github.com/wayblueorg/wayblue)'s Hyprland images, and customized based on how I set up my development laptop.
-See the [BlueBuild docs](https://blue-build.org/how-to/generate-iso/) to generate an ISO from this image.
 
 ## Missing bits so far
 
@@ -12,7 +11,8 @@ See the [BlueBuild docs](https://blue-build.org/how-to/generate-iso/) to generat
 - set up [kwallet](https://wiki.archlinux.org/title/KDE_Wallet) to unlock GPG key on login and `kwallet-pam` rules inserted into `/etc/pam.d/login`
   - or use [pam-gnupg](https://github.com/cruegge/pam-gnupg)
 - set up [ananicy-cpp](https://gitlab.com/ananicy-cpp/ananicy-cpp) service and config
-- set up systemd service to auto-run `rpm-ostree update`
+- set up systemd service to auto-run `rpm-ostree upgrade`
+- install wallpapers
 
 ### First boot tasks
 

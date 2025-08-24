@@ -83,6 +83,14 @@ modules:
       packages:
         - caps2esc
         - interception-tools
+  - type: dnf
+    repos:
+      copr:
+        - arun54321/ananicy-cpp
+    install:
+      allow-erasing: true
+      packages:
+        - ananicy-cpp
   - type: script
     snippets:
       - "git clone --depth=1 https://github.com/mattmc3/antidote.git /usr/share/zsh-antidote"
