@@ -10,9 +10,7 @@ A [BlueBuild](https://blue-build.org/) image based on [wayblue](https://github.c
 - add /tmp as [tmpfs](https://wiki.archlinux.org/title/Tmpfs) in /etc/fstab
 - set up [kwallet](https://wiki.archlinux.org/title/KDE_Wallet) to unlock GPG key on login and `kwallet-pam` rules inserted into `/etc/pam.d/login`
   - or use [pam-gnupg](https://github.com/cruegge/pam-gnupg)
-- set up [ananicy-cpp](https://gitlab.com/ananicy-cpp/ananicy-cpp) service and config
 - set up systemd service to auto-run `rpm-ostree upgrade`
-- install wallpapers
 
 ### First boot tasks
 
@@ -44,14 +42,11 @@ Most of these will be installed in [Distrobox](https://distrobox.it/) or toolbx 
 - traceroute
 - calc
 - difftastic
-- git-extras
 - gh
 - glances
 - yq
 - htop
 - jq
-- strace
-- tree-sitter
 - vault
 - wget
 - whois
