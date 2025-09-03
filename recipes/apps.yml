@@ -3,35 +3,14 @@ modules:
   - type: default-flatpaks
     configurations:
       - install:
-        - org.mozilla.firefox
-  - type: default-flatpaks
-    configurations:
-      - install:
-        - com.vivaldi.Vivaldi
-  - type: default-flatpaks
-    configurations:
-      - install:
-        - com.discordapp.Discord
-  - type: default-flatpaks
-    configurations:
-      - install:
-        - im.riot.Riot
-  - type: default-flatpaks
-    configurations:
-      - install:
-        - md.obsidian.Obsidian
-  - type: default-flatpaks
-    configurations:
-      - install:
-        - com.slack.Slack
-  - type: default-flatpaks
-    configurations:
-      - install:
-        - app.getclipboard.Clipboard
-  - type: default-flatpaks
-    configurations:
-      - install:
-        - org.videolan.VLC
+          - org.mozilla.firefox
+          - com.vivaldi.Vivaldi
+          - com.discordapp.Discord
+          - im.riot.Riot
+          - md.obsidian.Obsidian
+          - com.slack.Slack
+          - app.getclipboard.Clipboard
+          - org.videolan.VLC
   - type: rpm-ostree
     install:
       - kitty
