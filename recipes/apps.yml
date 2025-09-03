@@ -18,10 +18,3 @@ modules:
   - type: rpm-ostree
     install:
       - mpc
-  - type: dnf
-    repos:
-      copr:
-        - the4runner/firefox-dev
-    install:
-      packages:
-        - firefox-dev
