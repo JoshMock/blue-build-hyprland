@@ -1,9 +1,5 @@
 ---
 modules:
-  - type: script
-    snippets:
-      - git lfs install
-  - type: files
-    files:
-      - source: theme
-        destination: /
+  - type: copy
+    src: files/theme/usr/share/wallpapers
+    dest: /usr/share/wallpapers
