@@ -15,8 +15,14 @@ modules:
       - dunst
   - type: rpm-ostree
     install:
-      - ulauncher
       - wofi
+  - type: dnf
+    repos:
+      copr:
+        - gvalkov/vicinae
+    install:
+      packages:
+        - vicinae
   - type: dnf
     repos:
       copr:
