@@ -1,5 +1,6 @@
 ---
 modules:
-  - type: copy
-    src: files/theme/usr/share/wallpapers
-    dest: /usr/share/wallpapers
+  - type: files
+    files:
+      - source: theme
+        destination: /

@@ -28,6 +28,11 @@ jobs:
         recipe:
           - recipe.yml
     steps:
+      - name: Checkout
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+          lfs: true
       - name: Build Custom Image
         uses: blue-build/github-action@v1.8
         with:
@@ -36,3 +41,6 @@ jobs:
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
           maximize_build_space: true
+          skip_checkout: true
+          rechunk: true
+          use_cache: true
