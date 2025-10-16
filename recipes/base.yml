@@ -22,6 +22,14 @@ modules:
       - git-extras
       - git-lfs
       - git-annex
+  - type: dnf
+    repos:
+      copr:
+        - jackyzy823/jujutsu
+    install:
+      allow-erasing: true
+      packages:
+        - jujutsu
   - type: rpm-ostree
     install:
       - neovim
