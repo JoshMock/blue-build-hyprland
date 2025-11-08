@@ -1,11 +1,6 @@
 ---
 modules:
   - type: rpm-ostree
-    remove:
-      - swaylock
-      - swayidle
-      - swaybg
-  - type: rpm-ostree
     install:
       - dex-autostart
   - type: rpm-ostree
