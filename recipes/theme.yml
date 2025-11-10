@@ -1,13 +1,5 @@
 ---
 modules:
-  - type: rpm-ostree
-    install:
-      - qt5-qtquickcontrols
-      - qt5-qtgraphicaleffects
-  - type: script
-    snippets:
-      - "curl -L https://github.com/MarianArlt/sddm-chili/archive/refs/tags/0.1.5.tar.gz | tar -xz -C /usr/share/sddm/themes"
-      - "mv /usr/share/sddm/themes/sddm-chili-0.1.5 /usr/share/sddm/themes/chili"
   - type: files
     files:
       - source: theme
