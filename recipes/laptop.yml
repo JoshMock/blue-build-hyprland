@@ -30,4 +30,5 @@ modules:
         - Inter
   - type: script
     snippets:
-      - usermod -aG dialout 1000
+      - useradd --uid 1000 joshmock
+      - usermod -aG dialout joshmock
