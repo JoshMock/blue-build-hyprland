@@ -28,3 +28,6 @@ modules:
         - DejaVuSansMono
       google-fonts:
         - Inter
+  - type: script
+    snippets:
+      - usermod -aG dialout 1000
