@@ -4,7 +4,7 @@ name: joshmock-hyprland
 description: joshmock's Hyprland OS image
 
 base-image: ghcr.io/wayblueorg/hyprland-nvidia-open
-image-version: 42
+image-version: 43
 
 modules:
   - from-file: hyprland.yml
