@@ -14,7 +14,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - pm4rcin/hyprland
+        - pm4rcin/Hyprland
     install:
       allow-erasing: true
       packages:
