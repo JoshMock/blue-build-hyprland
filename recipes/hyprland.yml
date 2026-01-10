@@ -14,7 +14,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - gvalkov/vicinae
+        - vps07/vicinae
     install:
       packages:
         - vicinae
