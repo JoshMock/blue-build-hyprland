@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [[ -z "${XDG_CURRENT_DESKTOP}" ]]; then
-  exec /usr/bin/pinentry-gnome3 "$@"
-else
-  exec /usr/bin/pinentry-curses "$@"
+  exec pinentry-gnome3 "$@"
+els
+  exec pinentry-curses "$@"
 fi
