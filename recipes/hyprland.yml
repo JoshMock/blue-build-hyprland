@@ -21,16 +21,16 @@ modules:
   - type: dnf
     repos:
       copr:
-        - solopasha/hyprland
+        - pm4rcin/hyprland
     install:
       allow-erasing: true
       packages:
         - hypridle
-        - hyprland-qtutils
         - hyprlock
         - pyprland
         - swww
         - hyprpolkitagent
+        - hyprland-guiutils
   - type: dnf
     repos:
       copr:
