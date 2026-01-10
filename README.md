@@ -83,6 +83,7 @@ Most of these will be installed in [Distrobox](https://distrobox.it/) or toolbx 
 To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
+<<<<<<< HEAD
 
   ```
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/joshmock/joshmock-hyprland:latest
@@ -110,7 +111,7 @@ The `latest` tag will automatically point to the latest build. That build will s
 
 ## ISO
 
-If built on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
+If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/learn/universal-blue/#fresh-install-from-an-iso). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
 
 ## Verification
 
