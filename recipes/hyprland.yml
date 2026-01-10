@@ -14,7 +14,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - vps07/vicinae
+        - killcrb/vicinae
     install:
       packages:
         - vicinae
