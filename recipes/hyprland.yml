@@ -14,13 +14,6 @@ modules:
   - type: dnf
     repos:
       copr:
-        - killcrb/vicinae
-    install:
-      packages:
-        - vicinae
-  - type: dnf
-    repos:
-      copr:
         - pm4rcin/hyprland
     install:
       allow-erasing: true
@@ -30,7 +23,13 @@ modules:
         - pyprland
         - swww
         - hyprpolkitagent
-        - hyprland-guiutils
+  - type: dnf
+    repos:
+      copr:
+        - killcrb/vicinae
+    install:
+      packages:
+        - vicinae
   - type: dnf
     repos:
       copr:
