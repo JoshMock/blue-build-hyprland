@@ -12,18 +12,30 @@ modules:
     install:
       - wofi
   - type: dnf
+    replace:
+      - from-repo: copr:copr.fedorainfracloud.org:pm4rcin:Hyprland
+        packages:
+          - hyprland
+          - hyperidle
+          - hyprlock
+          - hyprpolkitagent
+  - type: dnf
+    repos:
+      copr:
+        - solopasha/hyprland
+    install:
+      allow-erasing: true
+      packages:
+        - pyprland
+        - swww
+  - type: dnf
     repos:
       copr:
         - pm4rcin/Hyprland
     install:
       allow-erasing: true
       packages:
-        - hyprland
-        - hypridle
-        - hyprlock
-        - pyprland
-        - swww
-        - hyprpolkitagent
+        - kitty
   - type: dnf
     repos:
       copr:
