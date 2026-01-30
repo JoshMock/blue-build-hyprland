@@ -12,14 +12,6 @@ modules:
     install:
       - wofi
   - type: dnf
-    replace:
-      - from-repo: copr:copr.fedorainfracloud.org:pm4rcin:Hyprland
-        packages:
-          - hyprland
-          - hyperidle
-          - hyprlock
-          - hyprpolkitagent
-  - type: dnf
     repos:
       copr:
         - solopasha/hyprland
@@ -36,6 +28,13 @@ modules:
       allow-erasing: true
       packages:
         - kitty
+    replace:
+      - from-repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
+        packages:
+          - hyprland
+          - hyperidle
+          - hyprlock
+          - hyprpolkitagent
   - type: dnf
     repos:
       copr:
