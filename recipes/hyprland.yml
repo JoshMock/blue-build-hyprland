@@ -29,7 +29,7 @@ modules:
       packages:
         - kitty
     replace:
-      - from-repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
+      - from-repo: copr:copr.fedorainfracloud.org:pm4rcin:Hyprland
         packages:
           - hyprland
           - hyperidle
