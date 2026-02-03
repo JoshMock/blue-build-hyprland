@@ -29,13 +29,13 @@ modules:
       packages:
         - kitty
         - hypridle
+        - hyprpolkitagent
     replace:
       - from-repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
         skip-unavailable: true
         packages:
           - hyprland
           - hyprlock
-          - hyprpolkitagent
   - type: dnf
     repos:
       copr:
