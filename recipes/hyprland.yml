@@ -27,15 +27,11 @@ modules:
     install:
       allow-erasing: true
       packages:
+        - hyprland
         - kitty
         - hypridle
         - hyprpolkitagent
-    replace:
-      - from-repo: copr:copr.fedorainfracloud.org:solopasha:hyprland
-        skip-unavailable: true
-        packages:
-          - hyprland
-          - hyprlock
+        - hyprlock
   - type: dnf
     repos:
       copr:
